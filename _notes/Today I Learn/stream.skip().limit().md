@@ -1,9 +1,9 @@
 ---
-title: Today I Learn
+title: stream.skip().limit()
 ---
+creteDate :  2023-03-03
 
--  2023-03-03
----
+
 stream.skip().limit() 을 알아보자
 
 - JAVA 단에서 페이징 하기 vs. DB에서 페이징 하기 

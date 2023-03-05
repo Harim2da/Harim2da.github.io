@@ -1,9 +1,8 @@
 ---
-title: Today I Learn
+title: Querydsl 에서 동적 sorting을 위해 OrderSpecifier 클래스 구현
 ---
+createDate :  2023-03-02
 
--  2023-03-02
----
 
 ### Querydsl 에서 동적 sorting을 위해 OrderSpecifier 클래스 구현
 

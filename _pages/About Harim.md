@@ -1,3 +1,9 @@
+---
+layout: page
+title: About Harim
+permalink: /about
+---
+
 # 커뮤니케이션이 탁월한 개발자
 
 ## Introduce
@@ -7,6 +13,13 @@
 (개발 관련 어쩌구 한 설명 적기)
 문서화해 팀에 공유하고, 다른 사람에게 도움을 주는 일을 좋아합니다. 내가 조금 더 움직이면 구성원이 편해진다는 생각으로 업무에 임하고 있습니다.
 
+-------
+
+## Contact
+- email : helloharim09@gmail.com
+- blog : https://harim2hi.netlify.app
+
+-----
 
 ## Work
 2020.12.27 ~ 현재
@@ -40,3 +53,5 @@
 		* S3 폴더 관리
 		* Code Deploy 관리
 		* 신규 입사자 및 타 부서 권한 요청 시 IAM 권한 부여
+
+

@@ -21,6 +21,7 @@ $success-color              : #27ae60 !default;
 $warning-color              : #e67e22 !default;
 $danger-color               : #c0392b !default;
 $info-color                 : #03a9f4 !default;
+$mark-highlight-color: rgba($primary-color, 0.15) !default;
 
 /* links */
 $link-color                 : $info-color !default;

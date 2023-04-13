@@ -22,6 +22,9 @@ $warning-color              : #e67e22 !default;
 $danger-color               : #c0392b !default;
 $info-color                 : #03a9f4 !default;
 $mark-highlight-color: rgba($primary-color, 0.15) !default;
+$block-quote-background-color: rgba($primary-color, 0.1) !default;
+$form-background-color: rgba(255, 255, 255, 0.527) !default;
+$footer-background-color: mix(#000, $background-color, 3%) !default;
 
 /* links */
 $link-color                 : $info-color !default;
@@ -29,3 +32,41 @@ $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : $primary-color !default;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 80%) !default;
+
+$active-color: mix($primary-color, $background-color, 5%) !default;
+
+/* YIQ color contrast */
+$yiq-contrasted-dark-default: $text-color !default;
+$yiq-contrasted-light-default: #fff !default;
+$yiq-contrasted-threshold: 175 !default;
+$yiq-debug: false !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.page__content {
+  a,
+  a:visited {
+    color: inherit;
+  }
+}
+
+/* next/previous buttons */
+.pagination--pager {
+  color: $text-color;
+  background-color: rgba($primary-color, 0.8);
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}

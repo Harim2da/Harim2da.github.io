@@ -3,7 +3,7 @@ title: "[프로젝트] Mysql 5.7 -> 8.0 Version Upgrade"
 excerpt: "AWS RDS Mysql 8.0 버전 업그레이드"
 
 categories:
-  - projects
+  - Projects
 tags:
   - [AWS, MySQL]
 

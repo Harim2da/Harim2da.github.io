@@ -98,5 +98,6 @@ date: 2023-04-16
 
 
 ##### 관련 내용
-- [MySQL 5.7 -> 8.0의 차이점은?](https://velog.io/@dev-hr2/Mysql-5.7%EA%B3%BC-8.0%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80)
+<!-- - [MySQL 5.7 -> 8.0의 차이점은?](https://velog.io/@dev-hr2/Mysql-5.7%EA%B3%BC-8.0%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80) -->
+- [MySQL 5.7 -> 8.0의 차이점은?](https://harim2da.github.io/blogs/diff-mysql5-8)
 - 다중 AZ 구성 : [다중AZ란?](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)

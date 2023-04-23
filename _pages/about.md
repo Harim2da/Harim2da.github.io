@@ -13,7 +13,6 @@ comments: false
 <br>
 
 ## Skills
-
 * Back-End 
 	* Java, Spring Boot, Spring Batch, Spring JPA, Gradle
 * DataBase 
@@ -31,9 +30,9 @@ comments: false
 <br>
 
 ## Work
-2020.12.27 ~ 현재<br/>
+2020.12.27 ~ 현재<br>
 더화이트커뮤니케이션
-- 챗봇, 웹챗, 콜, 메일 상담 솔루션 서비스
+- 챗봇, 웹챗, 콜, 메일 상담 솔루션 SaaS 서비스
 <br>
 
 ### Project
@@ -58,7 +57,6 @@ comments: false
 <br> 
 
 **커스텀 프로젝트**
-
 * 기간 : 2021.06 ~ 2021.07
 * 주요 성과 : N억 매출 달성에 기여
 * 작업 내용 : 특정 클라이언트용 챗봇 로직 개발 및 수정
@@ -69,7 +67,6 @@ comments: false
 <br>
 
 **AWS 관리**
-
 * 기간 : 2021.02 ~ 현재
 * AWS 관리 전반 담당
 * 주요 성과

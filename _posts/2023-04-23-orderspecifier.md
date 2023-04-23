@@ -20,13 +20,13 @@ date: 2023-04-23
 	- 정렬 조건은 가입일 (id가 순서를 보장하지 않는 케이스), 이름 (국영숫), 나이 등의 오름 || 내림차순
 	
 #### OrderSpecifier란?
-- 공식 문서 : http://querydsl.com/static/querydsl/4.0.7/apidocs/com/querydsl/core/types/OrderSpecifier.html
+- 공식 문서 : [http://querydsl.com/static/querydsl/4.0.7/apidocs/com/querydsl/core/types/OrderSpecifier.html](http://querydsl.com/static/querydsl/4.0.7/apidocs/com/querydsl/core/types/OrderSpecifier.html)
 - Querydsl 에서 동적 sorting을 위해 필요한 클래스
 
 #### 활용 예제
 ``` java
-	private OrderSpecifier getOrderCondition(AccountsSortType accountsSortType,  
-      boolean ascending, QAccounts accounts) {  
+private OrderSpecifier getOrderCondition(AccountsSortType accountsSortType,  
+	boolean ascending, QAccounts accounts) {  
 	   switch (accountsSortType) {  
 	      case JOIN_DATE:  
 	         return ascending ? accounts.joinDate.asc(): accounts.joinDate.desc();  

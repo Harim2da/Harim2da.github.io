@@ -4,8 +4,8 @@
 
 /* Colors */
 $background-color: #ffffff !default;
-$text-color: rgb(7, 7, 7) !default;
-$primary-color: #1d5995 !default; 
+$text-color: rgba(7, 7, 7, 0.906) !default;
+$primary-color: #2362a1 !default; 
 // $primary-color: #FF6C02 !default;
 
 $border-color: mix(#fff, $background-color, 20%) !default;
@@ -18,12 +18,12 @@ $form-background-color: rgba(255, 255, 255, 0.527) !default;
 $footer-background-color: mix(#000, $background-color, 3%) !default;
 $link-color: $primary-color !default;
 
-$link-color-hover: mix($primary-color, $background-color, 70%) !default;
-$link-color-visited: mix($link-color, rgb(3, 3, 3), 98%) !default;
+$link-color-hover: mix(#8abeb7, $background-color, 60%) !default;
+$link-color-visited: mix($link-color, rgb(47, 47, 47), 98%) !default;
 
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 70%) !default;
-$navicon-link-color-hover: mix(#000, $background-color, 80%) !default;
+$masthead-link-color-hover: mix(#8abeb7, $text-color, 70%) !default;
+$navicon-link-color-hover: mix(#8abeb7, $background-color, 80%) !default;
 
 $active-color: mix($primary-color, $background-color, 5%) !default;
 

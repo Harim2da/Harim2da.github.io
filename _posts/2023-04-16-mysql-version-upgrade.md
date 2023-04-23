@@ -43,6 +43,7 @@ date: 2023-04-16
 5. 모든 이슈가 해결되면 본 DB를 업그레이드 진행한다
 <br>
   
+
 #### 실서버 DB 스냅샷 테스트
 * 작업 방식은 크게 두 가지
 * 블루/그린 배포 방식 : down time을 최소화 하면서 RDS를 교체하는 방식
@@ -51,13 +52,13 @@ date: 2023-04-16
 
 <br>
 ##### 실서버 DB 테스트 작업 계획
-- 운영 DB 스냅샷을 두 개 복원한 뒤, 하나는 블루그린 테스트용 다른 하나는 인플레이스용으로 세팅
-<img src="assets/posts_img/testrds.png" alt="rds test env">
+- 운영 DB 스냅샷을 두 개 복원한 뒤, 하나는 블루그린 테스트용 다른 하나는 인플레이스용으로 세팅<br>
+<img src="https://harim2da.github.io/assets/posts_img/testrds.png" alt="rds test env">
 
-- 각 버전의 공통 체크 리스트
-	1) 파라미터 그룹 값들 확인하기
-	2) api 연결 체크
-	3) 버전 업 총 소요 시간 체크
+- 각 버전의 공통 체크 리스트<br>
+	1. 파라미터 그룹 값들 확인하기
+	2. api 연결 체크
+	3. 버전 업 총 소요 시간 체크
 
 - 블루/그린 버전일 때 추가 체크
 	- 블루 -> 그린으로 전환될 때 엔드포인트도 변경되는지 확인
@@ -80,7 +81,7 @@ date: 2023-04-16
 	- 파라미터 그룹에서 charset 설정을 안 해준 때에 데이터가 ?로 저장
 	- 파라미터그룹이 default 일 때 저장된 값
 
-- ![[Pasted image 20230317084926.png]]
+<!-- - ![[Pasted image 20230317084926.png]] -->
 	-> 파라미터 그룹 내, charset 설정을 모두 진행 후 테스트했더니 정상 노출 돼었다.
 
   
@@ -88,18 +89,14 @@ date: 2023-04-16
   
 
 ## 업그레이드 진행 (3/26(일) 오전 1:00)
-
-  
-
-순서
-
-1) 기존 서버들 binlog_format mixed로 변경, 재부팅
-2) 블루그린 생성
-3) 그린(버전업)을 prod로 스위칭
-4) 기존 버전 삭제
-
+### 작업 순서
+1. 기존 서버들 binlog_format mixed로 변경, 재부팅
+2. 블루그린 생성
+3. 그린(버전업)을 prod로 스위칭
+4. 기존 버전 삭제
+<br>
 
 
 ##### 관련 내용
-- [MySQL 5.7 -> 8.0의 차이점은?](../blogs/diff-mysql5-ver-8)
+- [MySQL 5.7 -> 8.0의 차이점은?](https://harim2da.github.io/blogs/diff-mysql5-ver-8)
 - 다중 AZ 구성 : [다중AZ란?](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)

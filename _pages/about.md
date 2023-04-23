@@ -10,7 +10,7 @@ comments: false
 함께 일하면 편하다, 커뮤니케이션이 잘 된다는 평을 들으며 2년 째 백엔드 개발팀에서 일하고 있습니다.
 스타트업에서 웹 서비스를 개발, 배포, 운영하고 AWS 관리도 함께 하는 중입니다.
 개발을 공부하고 업무를 해 볼수록, 상황에 맞게 필요한 기술을 적용하고 개선해 나가는 점이 즐거워 재밌게 일하고 있습니다.
-
+<br>
 
 ## Skills
 
@@ -19,25 +19,20 @@ comments: false
 * DataBase 
 	* MySQL, Redis, QueryDSL
 * DevOps 
-	* AWS : CodeDeploy, CodePipeline, EC2, S3, CloudWatch, SystemManager, RDS-Aurora, IAM, VPC
+	* <b>AWS</b> : CodeDeploy, CodePipeline, EC2, S3, CloudWatch, SystemManager, RDS-Aurora, IAM, VPC
 	* Jenkins
 * ETC
 	* Github, JIRA, Notion, Postman, IntelliJ
-
+<br>
 
 ## Contact
-
 - email : helloharim09@gmail.com
-
-  
+<br>
 
 ## Work
-
 2020.12.27 ~ 현재<br/>
 더화이트커뮤니케이션
-
 - 챗봇, 웹챗, 콜, 메일 상담 솔루션 서비스
-
 <br>
 
 ### Project
@@ -54,9 +49,9 @@ comments: false
 	* 신규 계정 초대 메일 발송부터 초대 대상의 가입까지 관련된 전체 API 개발
 	* 메시지 발송 내역 조회 및 엑셀 다운로드 성능 개선 (메시지 발송 건 6만 5천여 건 기준)
 		* DML이 거의 없는 데이터를 건마다 쿼리하던 방식을 `findAll()` 로 가져와 stream 돌리는 것으로 개선
-		* 그 결과 발송 내역 조회 4900% 개선 (100초 -> 2초)
-		* 해당 건 엑셀 다운로드 2100% 개선 (155초 -> 7초)
-		* 개선에 대한 [세부 설명](../projects/message)
+		* 그 결과 발송 내역 조회 `4900% 개선 (100초 -> 2초)`
+		* 해당 건 엑셀 다운로드 `2100% 개선 (155초 -> 7초)`
+		* 개선에 대한 [세부 설명](https://harim2da.github.io/projects/message)
 	* 기존 API 의 파라미터 및 매핑 등 구조 개선 진행
 
 <br> 
@@ -77,7 +72,7 @@ comments: false
 * 기간 : 2021.02 ~ 현재
 * AWS 관리 전반 담당
 * 주요 성과
-	* AWS RDS Mysql 5.7 -> 8.0 버전 업 작업 단독 진행 [자세히 보기](../projects/mysql-verion-upgrade)
+	* AWS RDS Mysql 5.7 -> 8.0 버전 업 작업 단독 진행 [자세히 보기](https://harim2da.github.io/projects/mysql-version-upgrade)
 	* 대형 클라이언트의 요구사항 충족을 위한 CloudWatch 모니터링 구조 변경, 경보 알람 트리거를 통해 자동 scale in, out 연결
 	* 배포 실패에 관한 트러블 슈팅 진행, 해결 방법 문서화
 	* 외주사의 작업을 위해 특정 S3 폴더만 접근 가능하도록 IAM 권한 설정 변경

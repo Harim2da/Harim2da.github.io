@@ -26,7 +26,7 @@ date: 2023-04-16
 
 : 클라우드게이트 RDS, 셀러게이트 RDS 전체
 
-* <img src="../assets/posts_img/region-cluster.png" alt="rds test env">
+* <img src="../assets/images/posts_img/region-cluster.png" alt="rds test env">
 
 -> 지원중단 관련 [공고](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.2103.html)
 
@@ -53,7 +53,7 @@ date: 2023-04-16
 <br>
 ##### 실서버 DB 테스트 작업 계획
 - 운영 DB 스냅샷을 두 개 복원한 뒤, 하나는 블루그린 테스트용 다른 하나는 인플레이스용으로 세팅<br>
-<img src="https://harim2da.github.io/assets/posts_img/testrds.png" alt="rds test env">
+<img src="https://harim2da.github.io/assets/images/posts_img/testrds.png" alt="rds test env">
 
 - 각 버전의 공통 체크 리스트<br>
 	1. 파라미터 그룹 값들 확인하기
@@ -98,5 +98,5 @@ date: 2023-04-16
 
 
 ##### 관련 내용
-- [MySQL 5.7 -> 8.0의 차이점은?](https://harim2da.github.io/blogs/diff-mysql5-ver-8)
+- [MySQL 5.7 -> 8.0의 차이점은?](https://velog.io/@dev-hr2/Mysql-5.7%EA%B3%BC-8.0%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80)
 - 다중 AZ 구성 : [다중AZ란?](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)

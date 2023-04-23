@@ -26,6 +26,7 @@ comments: false
 <br>
 
 ## Contact
+- blog (study log) : https://velog.io/@dev-hr2
 - email : helloharim09@gmail.com
 <br>
 

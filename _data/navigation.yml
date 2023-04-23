@@ -20,7 +20,3 @@ main:
 categories:
   - title: "Projects"
     url: /categories/projects/
-  - title: "Blogs"
-    url: /categories/blogs/
-  - title: "Algorithm"
-    url: /categories/algorithm/

@@ -80,7 +80,7 @@ date: 2023-04-16
   
 ##### 테스트 중 만난 이슈
 **1. 파라미터 그룹에서 charset 설정을 안 해준 때에 데이터가 ?로 저장**
-- 파라미터그룹이 default 일 때 저장된 값
+- 파라미터그룹이 default 일 때 저장된 값<br>
 <img src="https://harim2da.github.io/assets/images/posts_img/db-insert-result.png" alt="db insert result"><br>
 -> 파라미터 그룹 내, charset 설정을 모두 진행 후 테스트했더니 정상 노출 돼었다.
  

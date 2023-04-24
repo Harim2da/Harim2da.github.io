@@ -80,25 +80,25 @@ date: 2023-04-16
   
 ##### 테스트 중 만난 이슈
 **1. 파라미터 그룹에서 charset 설정을 안 해준 때에 데이터가 ?로 저장**
-	- 파라미터그룹이 default 일 때 저장된 값
-	<img src="https://harim2da.github.io/assets/images/posts_img/db-insert-result.png" alt="db insert result">
-	-> 파라미터 그룹 내, charset 설정을 모두 진행 후 테스트했더니 정상 노출 돼었다.
+- 파라미터그룹이 default 일 때 저장된 값
+<img src="https://harim2da.github.io/assets/images/posts_img/db-insert-result.png" alt="db insert result"><br>
+-> 파라미터 그룹 내, charset 설정을 모두 진행 후 테스트했더니 정상 노출 돼었다.
  
 **2. 셀러게이트 RDS 업그레이드 시, upgrade-precheck 실패로 업그레이드 실패 이슈**
-	- 이 역시 파라미터 그룹의 차이 때문에 발생한 이슈
-		- pre-check를 통과한 RDS와의 차이는 `sql_mode가 지정 값이 없느냐, TRADITIONAL로 세팅돼 있냐 차이`였음
-		- `최종적으로는 sql_mode에 지정값을 없애고 진행`해 정상 작동함
-	- AWS에서 메이저 업그레이드할 때 precheck를 해주는데 에러 발생 시, 로그를 확인할 수 있음
-		- Warning은 업그레이드 가능하지만, Error가 발생하면 업그레이드가 불가
-		- 당시 에러 로그는 아래와 같았음
-		```Json
-		{
-			"id": "auroraUpgradeCheckForSpecialCharactersInProcedures",
-			"title": "Check for inconsistency related to special characters in stored procedures.",
-			"status": "ERROR",
-			"description": "Invalid default value for 'modified'"
-		}
-		```
+- 이 역시 파라미터 그룹의 차이 때문에 발생한 이슈
+	- pre-check를 통과한 RDS와의 차이는 `sql_mode가 지정 값이 없느냐, TRADITIONAL로 세팅돼 있냐 차이`였음
+	- `최종적으로는 sql_mode에 지정값을 없애고 진행`해 정상 작동함
+- AWS에서 메이저 업그레이드할 때 precheck를 해주는데 에러 발생 시, 로그를 확인할 수 있음
+	- Warning은 업그레이드 가능하지만, Error가 발생하면 업그레이드가 불가
+	- 당시 에러 로그는 아래와 같았음
+	```
+	{
+		"id": "auroraUpgradeCheckForSpecialCharactersInProcedures",
+		"title": "Check for inconsistency related to special characters in stored procedures.",
+		"status": "ERROR",
+		"description": "Invalid default value for 'modified'"
+	}
+	```
 	- 해결 방법을 찾기 위한 여정
 		1. 첫 번째 검색 키워드 : `procedure`
 			- ‘호환되지 않아 사전에 주의해야할 부분’ 중에 프로시저에 대한 설명이 있었음

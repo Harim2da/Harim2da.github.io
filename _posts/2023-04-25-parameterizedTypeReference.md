@@ -1,5 +1,5 @@
 ---
-title: "[Spring](작성중) ParameterizedTypeReference"
+title: "[Spring] ParameterizedTypeReference-작성중"
 excerpt: "ParameterizedTypeReference를 알아보자"
 
 categories:
@@ -16,9 +16,9 @@ date: 2023-04-25
 ---
 
 #### 필요했던 케이스
-	- '티켓'이라는 별도의 서비스와 통신을 해서 값을 받아와야 하는 상황
-	- return 타입은 Generic 으로 지정해주는 게 컨벤션
-	- 여기서는 RestTemplate 통신 중
+- '티켓'이라는 별도의 서비스와 통신을 해서 값을 받아와야 하는 상황
+- return 타입은 Generic 으로 지정해주는 게 컨벤션
+- 여기서는 RestTemplate 통신 중
 #### 그럼 ParameterizedTypeReference란?
 - 공식 문서 : [ParameterizedTypeReference에 대한 spring doc](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/ParameterizedTypeReference.html)
 - 즉, 런타임 시 사라지는 타입 정보를 잡아서(capture) 런타임에도 유지(retain)하기 위한 추상 클래스. 

@@ -7,7 +7,7 @@ categories:
 tags:
   - [QueryDSL, Spring boot]
 
-permalink: /projects/orderspecifier
+permalink: /blogs/orderspecifier
 
 toc: true
 toc_sticky: true
